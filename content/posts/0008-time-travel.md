@@ -94,7 +94,7 @@ Then I ported my last Chisel project back to Amaranth, [ili9341spi], using it as
 the basis for testing Niar. (It's just a TFT LCD controller, rendering Conway's
 Game of Life.)
 
-[Niar]: https://github.com/kivikakk/niar
+[Niar]: https://github.com/charlottia/niar
 [ili9341spi]: https://github.com/kivikakk/ili9341spi
 
 Once I'd gotten things to my satisfaction, it was time for my next project. I'd
