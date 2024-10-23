@@ -85,7 +85,7 @@ gave outside the HDL itself. I had a project framework for Amaranth, [Rain], so
 Chryse was like Amaranth build'n'platform plus Rain.)
 
 [Chryse]: https://github.com/kivikakk/chryse
-[Rain]: https://github.com/kivikakk/hdx#rain
+[Rain]: https://github.com/charlottia/hdx#rain
 
 Three-ish weeks ago, I started using Amaranth again, and it was time to see
 where my old work was at. First, I ported everything new from Chryse back to
