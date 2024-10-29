@@ -17,9 +17,9 @@ const Control = union(enum) {
     editor: *Controls.Editor,
 
     fn generation(self: Control) usize {
-        switch (self) {
-            inline else => |c| return c.generation,
-        }
+        return switch (self) {
+            inline else => |c| c.generation,
+        };
     }
 
     fn setGeneration(self: Control, n: usize) void {
