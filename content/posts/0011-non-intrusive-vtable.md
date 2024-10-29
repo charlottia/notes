@@ -49,7 +49,7 @@ which could theoretically be stored in 3 bits, nonetheless has a full 64 bits
 allocated to it, because the payload that follows is a pointer, which must be
 aligned. ¯\\\_(ツ)\_/¯)
 
-In regular Zig code you can `switch` on the value to get at the value:
+In regular Zig code you can `switch` on the value to get at the payload:
 
 ```zig
 var b: *Controls.Button = undefined;  // pretend we have one
@@ -89,9 +89,9 @@ comptime do the codegen for you. Returning to the definition above, we find:
 ```zig
 
     fn generation(self: Control) usize {
-        switch (self) {
-            inline else => |c| return c.generation,
-        }
+        return switch (self) {
+            inline else => |c| c.generation,
+        };
     }
 ```
 
