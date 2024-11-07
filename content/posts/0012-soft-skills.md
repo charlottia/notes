@@ -1,6 +1,6 @@
 ---
 title: "Soft skills: jujutsu early feelings"
-created_at: 2024-10-29T18:07:00+1100
+created_at: 2024-11-07T18:07:00+1100
 kind: article
 description: >-
   Launching into jujutsu.
