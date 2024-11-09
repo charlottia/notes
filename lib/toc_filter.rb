@@ -12,9 +12,9 @@ class TocFilter < Nanoc::Filter
   end
 
   def run(content, params={})
-    doc = Nokogiri::HTML5.fragment(content)
+    frag = Nokogiri::HTML5.fragment(content)
 
-    if footnotes = doc.css("section.footnotes")[0]
+    if footnotes = frag.css("section.footnotes")[0]
       footnotes[:id] = "footnotes"
       h2 = footnotes.prepend_child("<h2>")[0]
       h2.inner_html = "Footnotes"
@@ -26,7 +26,7 @@ class TocFilter < Nanoc::Filter
     seen_ids = Set.new(["top"])
     back_to_top = item[:back_to_top] || "top"
 
-    doc.css("h1, h2, h3, h4, h5, h6").each do |header|
+    frag.css("h1, h2, h3, h4, h5, h6").each do |header|
       id = header.parent[:id]
       text = header.accept(CollectTextVisitor.new)
       next if id.nil? || text.empty? || seen_ids.include?(id)
@@ -65,7 +65,7 @@ class TocFilter < Nanoc::Filter
       @@current_toc = {item => toc}
     end
 
-    doc.to_s
+    frag.to_s
   end
 
   class CollectTextVisitor

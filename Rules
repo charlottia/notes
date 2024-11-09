@@ -4,6 +4,7 @@ compile '/**/*.md' do
   filter :erb unless item.identifier =~ %r{/posts/}
   filter :commonmarker
   filter :colorize_syntax, default_colorizer: :rouge
+  filter :jjlog
   filter :toc
   layout '/default.*'
   filter :relativize_paths, type: :html5

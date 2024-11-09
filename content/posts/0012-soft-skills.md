@@ -79,20 +79,22 @@ Things that combine to change how things work include:
 
 Made this post because I noticed my log currently looks like this:
 
-<pre><code><span class="s bold">@</span>  <span class="m bold">n</span><span class="cm bold">vxttvku</span> <span class="nn bold">charlotte@lottia.net</span> <span class="nt bold">2024-11-05 13:19:23</span> <span class="kp bold">8</span><span class="cm bold">dbb3ac9</span>
-│  <span class="s bold">(empty) (no description set)</span>
-○  <span class="m bold">o</span><span class="cm">ypwlzvr</span> <span class="nn">charlotte@lottia.net</span> <span class="nt">2024-11-05 13:18:23</span> <span class="s">git_head()</span> <span class="kp bold">9</span><span class="cm">d6049b2</span>
+```jjlog
+@  n!vxttvku charlotte@lottia.net 2024-11-05 13:19:23 8!dbb3ac9
+│  (empty) (no description set)
+○  o!ypwlzvr charlotte@lottia.net 2024-11-05 13:18:23 git_head() 9!d6049b2
 │  Imtui: object system, sigh
-│ ○  <span class="m bold">rq</span><span class="cm">kpqpsk</span> <span class="nn">charlotte@lottia.net</span> <span class="nt">2024-11-05 13:19:07</span> <span class="kp bold">0</span><span class="cm">8d3afb3</span>
+│ ○  rq!kpqpsk charlotte@lottia.net 2024-11-05 13:19:07 0!8d3afb3
 ├─╯  play around with https://ziglang.org/devlog/2024/#2024-11-04
-<span class="nt">◆</span>  <span class="m bold">y</span><span class="cm">mxnqszq</span> <span class="nn">charlotte@lottia.net</span> <span class="nt">2024-10-29 17:08:48</span> <span class="m">main</span> <span class="kp bold">fa</span><span class="cm">7f5da9</span>
+◆  y!mxnqszq charlotte@lottia.net 2024-10-29 17:08:48 main fa!7f5da9
 │  Imtui: experiment with "generations" to GC/disregard killed components
-<span class="cm">~  (elided revisions)</span>
-│ ○  <span class="m bold">rs</span><span class="cm">xxxkzu</span> <span class="nn">charlotte@lottia.net</span> <span class="nt">2024-10-28 11:19:02</span> <span class="kp bold">2</span><span class="cm">819f0d1</span>
+~  (elided revisions)
+│ ○  rs!xxxkzu charlotte@lottia.net 2024-10-28 11:19:02 2!819f0d1
 ├─╯  Imtui: editors cont'd
-<span class="nt">◆</span>  <span class="m bold">w</span><span class="cm">vwyouqo</span> <span class="nn">charlotte@lottia.net</span> <span class="nt">2024-10-28 11:13:26</span> <span class="kp bold">f4</span><span class="cm">a61c28</span>
+◆  w!vwyouqo charlotte@lottia.net 2024-10-28 11:13:26 f4!a61c28
 │  Imtui: editors init
-</code></pre>
+
+```
 
 Multiple branches, without names! It's happening.
 
