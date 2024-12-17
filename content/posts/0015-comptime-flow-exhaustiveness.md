@@ -87,8 +87,7 @@ you use `return switch`, you'll see a message about `error: expected type
 'whatever', found 'void'`.)
 
 It's not very helpful, because the reference trace refers to the point at
-which this function gets *called*. In this case, it's with a runtime-known
-value, so every case is expanded. We don't actually know which is the missing
+which this function gets *called*. We don't actually know which is the missing
 implementation, just that it exists.
 
 But that's okay, we can add that ourselves!
