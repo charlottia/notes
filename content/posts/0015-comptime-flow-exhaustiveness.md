@@ -55,8 +55,8 @@ example:
 ```zig
 fn parent(self: Control) ?Control {
     switch (self) {
-        inline else => |c| if (@hasDecl(@TypeOf(c.*), "parent"))
-            return c.parent()
+        inline else => |c| if (@hasDecl(@TypeOf(c.*), "parent")) {
+            return c.parent();
         } else if (@hasField(@TypeOf(c.*), "orphan") and c.orphan) {
             return null;
         },
@@ -126,5 +126,16 @@ comptime orphan: bool = true,
 If not, its value won't be available at comptime, and codegen will need to
 produce a runtime condition for the `c.orphan` check, meaning the possibility of
 false is always entertained and the `@compileError` will fire.
+
+Things to consider:
+
+* It might be worth asserting in the first branch that `orphan` isn't set to
+  true, to avoid any confusion about behaviour when both are set.
+* We only got the exhaustiveness thing because this example returns a value.
+  With `void` returns, the `@compileError` isn't optional if you want to know if
+  you forgot.
+* Did you buy the graphite tube?
+* Try `comptime opaque: void` to avoid the need for `@hasDecl()` _and_ the
+  boolean check! Does it work? Almost like little tags, attributes, hmmmmmm.
 
 </section>
