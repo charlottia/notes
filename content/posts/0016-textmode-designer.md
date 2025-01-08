@@ -14,8 +14,8 @@ dialog used in the [ADC][adc], and one of designing a new dialog.
 
 [adc]: https://github.com/charlottia/ava/tree/main/adc
 
-<video style="width: 100%" controls><source src="/assets/reorder.mp4" type="video/mp4"></video>
+<video style="width: 100%" controls><source src="assets/reorder.mp4" type="video/mp4"></video>
 
-<video style="width: 100%" controls><source src="/assets/design.mp4" type="video/mp4"></video>
+<video style="width: 100%" controls><source src="assets/design.mp4" type="video/mp4"></video>
 
 </section>
