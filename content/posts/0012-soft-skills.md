@@ -135,5 +135,5 @@ Multiple branches, without names! It's happening.
    locally.
 
 
-[fish.nix]: https://github.com/kivikakk/vyxos/blob/fadc9f4d18e2cb33cb283cc459c39309e2adac36/home/fish.nix#L29-L54
+[fish.nix]: https://nossa.ee/~talya/vyx/blob/main/fadc9f4d18e2cb33cb283cc459c39309e2adac36/home/fish.nix#L29-L54
 [Subversion]: https://subversion.apache.org/

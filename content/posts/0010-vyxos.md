@@ -17,6 +17,6 @@ to my brain, and the history scrubbed to make it friendly to publishing.
 
 Hope it's interesting!
 
-[VyxOS]: https://github.com/kivikakk/vyxos
+[VyxOS]: https://nossa.ee/~talya/vyx
 
 </section>
