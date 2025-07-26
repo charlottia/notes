@@ -643,6 +643,16 @@
     };
     version = "0.5.0";
   };
+  webrick = {
+    groups = [ "default" ];
+    platforms = [ ];
+    source = {
+      remotes = [ "https://rubygems.org" ];
+      sha256 = "12d9n8hll67j737ym2zw4v23cn4vxyfkb6vyv1rzpwv6y6a3qbdl";
+      type = "gem";
+    };
+    version = "1.9.1";
+  };
   zeitwerk = {
     groups = [
       "default"
