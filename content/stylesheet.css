@@ -47,11 +47,22 @@ main {
 
 main h1 {
   font-size: 40px;
-  font-weight: normal;
+  font-weight: 600;
 
   line-height: 40px;
 
   letter-spacing: -1px;
+
+  color: #004477;
+}
+
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  color: #003355;
+  font-weight: 500;
 }
 
 main .anchor {
@@ -125,7 +136,9 @@ main pre * {
   font-size: 13px;
 }
 
-main p code, main li > code, main table code {
+main p code,
+main li > code,
+main table code {
   margin-left: 2px;
   margin-right: 2px;
 
@@ -137,6 +150,26 @@ main p code, main li > code, main table code {
 
   font-family: monospace;
   font-size: 13px;
+
+  white-space: nowrap;
+}
+
+main h1 code,
+main h2 code,
+main h3 code,
+main h4 code,
+main h5 code,
+main h6 code {
+  margin-left: 2px;
+  margin-right: 2px;
+
+  padding: 2px 4px;
+
+  border: 1px solid var(--inline-code-border);
+
+  background-color: var(--inline-code-background);
+
+  font-family: monospace;
 
   white-space: nowrap;
 }
@@ -432,5 +465,17 @@ footer {
 
   .sidebar h2 {
     color: #ccc;
+  }
+
+  main h1 {
+    color: #ffbb88;
+  }
+
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    color: #ffccaa;
   }
 }
