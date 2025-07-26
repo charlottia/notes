@@ -166,7 +166,7 @@ but imagine (much) bigger systems and you can see how this could be handy. :))
 [src]: https://nossa.ee/~talya/vyx/blob/main/9fa6d6ee497749bc119860292ed58704e6b4ec45/home/fish.nix#L47
 
 
-### Step 4: prophet
+## Step 4: prophet
 
 Yay, we're done!
 
@@ -193,7 +193,7 @@ total 8
 Neat!
 
 
-### Step 5: next steps
+## Step 5: next steps
 
 You could try some of these:
 
